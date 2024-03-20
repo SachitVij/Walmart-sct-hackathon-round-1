@@ -1,8 +1,0 @@
-The algorithm implemented in the script for optimising delivery routes from a depot to various customer locations is a custom approach inspired by Dijkstra's algorithm. However, it's tailored specifically for the scenario where the goal is to minimize the total distance traveled by directly visiting all nodes (locations) from a starting point (depot) without the necessity of traveling through intermediate nodes. Here's a breakdown of the algorithm and its complexity:
-
-The algorithm draws inspiration from Dijkstra's algorithm, which is traditionally used for finding the shortest paths from a source to all vertices in a graph with weighted edges.
-- Unlike the standard application of Dijkstra's algorithm that computes shortest paths through a network of interconnected nodes
-- The core of the algorithm involves iteratively selecting the next closest delivery location to the current location, starting from the depot, until all delivery locations have been visited.
-
-- O(n^2): For each of the n delivery locations, the algorithm calculates the distance to all other unvisited locations to find the next closest one. This results in a quadratic time complexity since, for each node, a linear scan of the remaining nodes is performed. 
-- O(n): The space complexity is linear with respect to the number of delivery locations. This is because the algorithm stores a list of all locations, a set of visited locations, and auxiliary data structures for computing and storing distances and delivery sequence numbers.
